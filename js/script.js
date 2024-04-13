@@ -1,3 +1,5 @@
+
+// resetando o comportamento padrão do formulário
 document.querySelector(".form").addEventListener("submit", function (e) {
   e.preventDefault();
   generatePassword();
@@ -20,6 +22,7 @@ function generatePassword() {
   let password = "";
 
   // Loop com a quantidade de caracteres
+  //
   for (let i = 0; i < length; i++) {
     password += charset.charAt(Math.floor(Math.random() * charset.length));
   }
@@ -30,6 +33,7 @@ function generatePassword() {
 function copyPassword() {
   const passwordField = document.getElementById("password");
   const password = passwordField.value;
+  // Metodo navegator.clipboard.writeText() substitui o uso de document.execCommand('copy') obsoleto
   navigator.clipboard.writeText(password).then(
     function () {
       alert(`Senha copiada para a área de transferência!

@@ -1,7 +1,7 @@
 # Gerador de Senhas
 
 > Autor: Alan Campos \
-> Status do Projeto: em fase final :heavy_check_mark:
+> Status do Projeto: Concluído :heavy_check_mark:
 
 ## Descrição do Projeto
 
